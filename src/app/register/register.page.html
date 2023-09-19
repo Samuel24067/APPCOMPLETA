@@ -1,0 +1,52 @@
+
+
+<ion-content>
+  <img src="./assets/fondo3.jpeg" width="80%" height="30%">
+  <ion-card class="registro">
+    <ion-card-header style="background-color: #EA9010;">
+      <ion-card-title style="text-align: center; color:white">Registrarse</ion-card-title>
+    </ion-card-header>
+
+      <div>
+        <ion-card-content>
+          <form >
+
+            
+            <ion-item>
+              
+              <ion-text style="text-align: center;" color="danger" *ngIf="mensajeError">{{ mensajeError }}</ion-text>
+              <ion-label position="floating" style="color: gainsboro;">Correo electrónico</ion-label>
+              <ion-input name="correo" type="email" [(ngModel)]="correo"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating" style="color: gainsboro;">Nombre De Usuario</ion-label>
+              <ion-input name="correo" type="email" [(ngModel)]="nombre_De_Usuario"></ion-input>
+            </ion-item>
+            
+          
+            <ion-item>
+              <ion-label position="floating" style="color: gainsboro;">Contraseña</ion-label>
+              <ion-input name="password" type="password" [(ngModel)]="contrasena"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="floating" style="color: gainsboro;">Confirmar Contraseña</ion-label>
+              <ion-input name="password" type="password" [(ngModel)]="confirmarContrasena"></ion-input>
+            </ion-item>
+
+            <ion-text color="danger" *ngIf="mensaje">{{ mensaje }}</ion-text>
+
+            <br>
+            <ion-button expand="full" type="submit" (click)="validarCampos()" >Registrarse</ion-button>
+            <br>
+            <h3 style="text-align: center;">¿Ya tienes cuenta?</h3>
+            <br>
+            <ion-button expand="full" type="submit" (click)="navigateToLogin()">Inicia sesion</ion-button>
+          </form>
+          
+        </ion-card-content>
+      </div>      
+  </ion-card>
+  <img src="./assets/fondo2.jpeg">
+</ion-content>

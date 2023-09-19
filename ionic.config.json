@@ -1,0 +1,7 @@
+{
+  "name": "photoSena",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

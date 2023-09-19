@@ -1,0 +1,40 @@
+[
+    {
+        "PublicationSena": [
+            {
+                "titulo": "Vacaciones en la playa",
+                "descripcion": "Un viaje relajante a la costa con amigos.",
+                "foto": "https://es.ncl.com/sites/default/files/TravelBlog.BeachMainV2.jpg"
+            },
+            {
+                "titulo": "Receta de pastel de chocolate",
+                "descripcion": "Instrucciones para hacer un delicioso pastel de chocolate.",
+                "foto": "https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F21%2F2017%2F02%2F17%2Fpastel-sencillo-de-chocolate-2000.jpg"
+            },
+            {
+                "titulo": "Proyecto de arte abstracto",
+                "descripcion": "Una descripción de mi proyecto de arte en acuarela.",
+                "foto": "https://i0.wp.com/pegotetes.com/wp-content/uploads/2020/06/proyectoarte6hero.jpg?fit=2000%2C1500&ssl=1"
+            },
+            {
+                "titulo": "Lista de tareas para el fin de semana",
+                "descripcion": "Cosas que hacer durante el fin de semana.",
+                "foto": "https://www.menteasombrosa.com/wp-content/uploads/2019/05/tareas-para-casa-nenes-582x450.jpg"
+            },
+            {
+                "titulo": "Explorando senderos en la montaña",
+                "descripcion": "Un día de senderismo en las montañas con la familia.",
+                "foto": "https://www.lavanguardia.com/andro4all/hero/2021/03/Mejores-8-aplicaciones-gratuitas-para-hacer-senderismo-y-planificar-rutas-2.jpg?width=1200"
+            }
+              
+              
+              
+              
+
+              
+            
+            
+        ]             
+
+    }
+]

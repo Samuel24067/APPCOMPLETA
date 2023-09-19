@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-icon slot="end"  size="large" name="exit-outline" (click)="back()"></ion-icon>
+    <ion-title style="text-align: center; color:#EA9010">PHOTO</ion-title>
+    
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-refresher slot="fixed" (ionRefresh)="handleRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <ion-searchbar mode="ios" animated="true" placeholder="¿Que estas buscando?" (ionInput)="handleInput($event)"></ion-searchbar>
+
+  <ion-card *ngFor="let result of data">
+    
+    <img src="{{result.foto}}"/>
+    <ion-card-header>
+      <ion-card-title>{{result.titulo}}</ion-card-title>
+    </ion-card-header>
+   
+    <ion-card-content>
+      {{result.descripcion}}
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        
+        <ion-tab-button (click)="formPublication()" >
+          <ion-icon name="camera-outline" style="color: white;"></ion-icon>
+          
+        </ion-tab-button>
+
+      </ion-tab-bar>
+    </ion-tabs>
+
+  </ion-toolbar>
+</ion-footer>
+

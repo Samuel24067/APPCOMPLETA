@@ -1,0 +1,37 @@
+
+<ion-content style="background-image:url(./assets/fondo.png);">
+
+  <ion-card class="card">
+    <ion-card-header style="background-color: #EA9010;">
+      <ion-card-title style="text-align: center; color: white;">LOG IN</ion-card-title>
+    </ion-card-header>
+    
+
+      <div>
+        <ion-card-content>
+          <form (ngSubmit)="login()">
+
+            <ion-item>
+              <ion-label position="floating" style="color: gainsboro;">username</ion-label>
+              <ion-input [(ngModel)]="email" name="email" type="email"></ion-input>
+            </ion-item>
+            
+          
+            <ion-item>
+              <ion-label position="floating" style="color: gainsboro;">password</ion-label>
+              <ion-input [(ngModel)]="password" name="password" type="password"></ion-input>
+            </ion-item>
+          
+          
+              <ion-button  expand="full" type="submit">Ingresar</ion-button>
+            
+            <br>
+            <h3 style="text-align: center;">¿No tienes cuenta?</h3>
+            <br>
+            
+          </form>
+          
+        </ion-card-content>
+      </div>      
+  </ion-card>
+</ion-content>
